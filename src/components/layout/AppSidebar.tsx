@@ -5,8 +5,7 @@ import {
   Sidebar, 
   SidebarContent, 
   SidebarFooter, 
-  SidebarHeader, 
-  SidebarTrigger 
+  SidebarHeader
 } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -43,7 +42,7 @@ export function AppSidebar() {
 
   return (
     <>
-      <Sidebar className="border-r" open={isSidebarOpen}>
+      <Sidebar className="border-r">
         <SidebarHeader className="flex h-16 items-center px-6 border-b">
           <div className="flex items-center">
             <div className="font-bold text-lg">

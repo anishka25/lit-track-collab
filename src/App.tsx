@@ -11,6 +11,7 @@ import KanbanPage from "./pages/KanbanPage";
 import TimelinePage from "./pages/TimelinePage";
 import LiteraturePage from "./pages/LiteraturePage";
 import ReadingPage from "./pages/ReadingPage";
+import LandingPage from "./pages/LandingPage";
 
 const queryClient = new QueryClient();
 
@@ -21,7 +22,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/dashboard" element={<Index />} />
           <Route path="/tasks" element={<TasksPage />} />
           <Route path="/kanban" element={<KanbanPage />} />
           <Route path="/timeline" element={<TimelinePage />} />
