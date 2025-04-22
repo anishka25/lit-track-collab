@@ -8,6 +8,22 @@ export const teamMembers: TeamMember[] = [
     role: "Team Lead",
     email: "john@example.com",
     avatar: "https://i.pravatar.cc/150?img=1",
+    taskProgress: {
+      completed: 12,
+      total: 20
+    },
+    dailyUpdates: [
+      {
+        id: "update-1-1",
+        date: "2025-04-22",
+        content: "Finished literature review for the neural network project. Will start working on the methodology section tomorrow."
+      },
+      {
+        id: "update-1-2",
+        date: "2025-04-21",
+        content: "Met with the team to discuss progress. Assigned new tasks to everyone."
+      }
+    ]
   },
   {
     id: "member-2",
@@ -15,6 +31,17 @@ export const teamMembers: TeamMember[] = [
     role: "Research Assistant",
     email: "sarah@example.com",
     avatar: "https://i.pravatar.cc/150?img=2",
+    taskProgress: {
+      completed: 8,
+      total: 15
+    },
+    dailyUpdates: [
+      {
+        id: "update-2-1",
+        date: "2025-04-22",
+        content: "Completed data preprocessing for experiment 2. Results look promising."
+      }
+    ]
   },
   {
     id: "member-3",
@@ -22,6 +49,22 @@ export const teamMembers: TeamMember[] = [
     role: "Data Scientist",
     email: "alex@example.com",
     avatar: "https://i.pravatar.cc/150?img=3",
+    taskProgress: {
+      completed: 15,
+      total: 18
+    },
+    dailyUpdates: [
+      {
+        id: "update-3-1",
+        date: "2025-04-22",
+        content: "Finished implementing the new clustering algorithm. Will test it tomorrow."
+      },
+      {
+        id: "update-3-2",
+        date: "2025-04-21",
+        content: "Started working on data visualization for our latest results."
+      }
+    ]
   },
   {
     id: "member-4",
@@ -29,6 +72,17 @@ export const teamMembers: TeamMember[] = [
     role: "Lab Technician",
     email: "maria@example.com",
     avatar: "https://i.pravatar.cc/150?img=4",
+    taskProgress: {
+      completed: 10,
+      total: 12
+    },
+    dailyUpdates: [
+      {
+        id: "update-4-1",
+        date: "2025-04-22",
+        content: "Set up new experiment environment. Ready for testing tomorrow."
+      }
+    ]
   },
   {
     id: "member-5",
@@ -36,6 +90,17 @@ export const teamMembers: TeamMember[] = [
     role: "Research Fellow",
     email: "david@example.com",
     avatar: "https://i.pravatar.cc/150?img=5",
+    taskProgress: {
+      completed: 7,
+      total: 14
+    },
+    dailyUpdates: [
+      {
+        id: "update-5-1",
+        date: "2025-04-22",
+        content: "Working on the literature review section. Found some interesting papers to include."
+      }
+    ]
   },
 ];
 

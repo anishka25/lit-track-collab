@@ -14,6 +14,7 @@ import ReadingPage from "./pages/ReadingPage";
 import LandingPage from "./pages/LandingPage";
 import TeamPage from "./pages/TeamPage";
 import ExperimentsPage from "./pages/ExperimentsPage";
+import CollaborativePaperPage from "./pages/CollaborativePaperPage";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/reading" element={<ReadingPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/experiments" element={<ExperimentsPage />} />
+          <Route path="/collaborative-paper" element={<CollaborativePaperPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
