@@ -15,6 +15,7 @@ import LandingPage from "./pages/LandingPage";
 import TeamPage from "./pages/TeamPage";
 import ExperimentsPage from "./pages/ExperimentsPage";
 import CollaborativePaperPage from "./pages/CollaborativePaperPage";
+import ResearchPlannerPage from "./pages/ResearchPlannerPage";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/team" element={<TeamPage />} />
           <Route path="/experiments" element={<ExperimentsPage />} />
           <Route path="/collaborative-paper" element={<CollaborativePaperPage />} />
+          <Route path="/research-planner" element={<ResearchPlannerPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
