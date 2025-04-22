@@ -22,17 +22,19 @@ import {
   Menu,
   GanttChartSquare,
   BookText,
+  FileText,
 } from "lucide-react";
 
 const navItems = [
-  { label: "Dashboard", path: "/", icon: <Home className="w-5 h-5" /> },
+  { label: "Dashboard", path: "/dashboard", icon: <Home className="w-5 h-5" /> },
   { label: "Tasks", path: "/tasks", icon: <LayoutDashboard className="w-5 h-5" /> },
   { label: "Kanban", path: "/kanban", icon: <SquareKanban className="w-5 h-5" /> },
   { label: "Timeline", path: "/timeline", icon: <GanttChartSquare className="w-5 h-5" /> },
   { label: "Calendar", path: "/calendar", icon: <CalendarDays className="w-5 h-5" /> },
+  { label: "Team", path: "/team", icon: <Users className="w-5 h-5" /> },
+  { label: "Experiments", path: "/experiments", icon: <FileText className="w-5 h-5" /> },
   { label: "Literature", path: "/literature", icon: <BookOpen className="w-5 h-5" /> },
   { label: "Reading", path: "/reading", icon: <BookText className="w-5 h-5" /> },
-  { label: "Team", path: "/team", icon: <Users className="w-5 h-5" /> },
   { label: "Settings", path: "/settings", icon: <Settings className="w-5 h-5" /> },
 ];
 

@@ -12,6 +12,8 @@ import TimelinePage from "./pages/TimelinePage";
 import LiteraturePage from "./pages/LiteraturePage";
 import ReadingPage from "./pages/ReadingPage";
 import LandingPage from "./pages/LandingPage";
+import TeamPage from "./pages/TeamPage";
+import ExperimentsPage from "./pages/ExperimentsPage";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +32,8 @@ const App = () => (
           <Route path="/literature" element={<LiteraturePage />} />
           <Route path="/reading/:paperId" element={<ReadingPage />} />
           <Route path="/reading" element={<ReadingPage />} />
+          <Route path="/team" element={<TeamPage />} />
+          <Route path="/experiments" element={<ExperimentsPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
