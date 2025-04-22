@@ -1,4 +1,3 @@
-
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { PageLayout } from "@/components/layout/PageLayout";
@@ -8,6 +7,7 @@ import { ReaderView } from "@/components/reading/ReaderView";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, BookmarkPlus, Download, Share2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { toast } from "sonner";
 
 type PaperStatus = "unread" | "reading" | "completed" | "archived";
 
@@ -46,6 +46,13 @@ const ReadingPage = () => {
     setPaper(dummyPaper);
   }, [paperId]);
 
+  const handleUpdateProgress = (progress: number) => {
+    if (paper) {
+      setPaper({ ...paper, progress });
+      toast.success("Progress updated");
+    }
+  };
+
   if (!paper) {
     return <div>Loading...</div>;
   }
@@ -78,7 +85,7 @@ const ReadingPage = () => {
       <div className="grid grid-cols-1 gap-6">
         <Card>
           <CardContent className="p-0">
-            <ReaderView paper={paper} />
+            <ReaderView paper={paper} onUpdateProgress={handleUpdateProgress} />
           </CardContent>
         </Card>
       </div>
